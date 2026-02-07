@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "electron": "^40.2.1"
+  }
+}
