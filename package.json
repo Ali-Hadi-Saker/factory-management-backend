@@ -2,5 +2,26 @@
   "dependencies": {
     "better-sqlite3": "^12.6.2",
     "electron": "^40.2.1"
-  }
+  },
+  "name": "jihad-factory",
+  "version": "1.0.0",
+  "description": "\"# factory-management-backend\"",
+  "type": "module",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ali-Hadi-Saker/factory-management-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ali-Hadi-Saker/factory-management-backend/issues"
+  },
+  "homepage": "https://github.com/Ali-Hadi-Saker/factory-management-backend#readme"
 }
