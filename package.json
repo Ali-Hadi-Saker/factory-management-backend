@@ -8,7 +8,9 @@
   "description": "\"# factory-management-backend\"",
   "type": "module",
   "main": "main.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "electron-rebuild": "^3.2.9"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js"

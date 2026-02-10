@@ -1,6 +1,13 @@
 // Main Electron entry: create and manage the application window
-const { app, BrowserWindow } = require('electron'); // Electron app and window
-const path = require('path'); // path helpers
+import {app, BrowserWindow} from 'electron';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Needed to replace __dirname in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+import './backend/index.js';
 
 function createWindow() {
   // Create the browser window with a preload script for secure IPC
@@ -22,3 +29,5 @@ app.whenReady().then(createWindow); // create window when Electron is ready
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit(); // quit for non-mac platforms
 });
+
+console.log("Electron main started");
