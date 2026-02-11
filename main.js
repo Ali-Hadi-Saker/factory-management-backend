@@ -19,7 +19,7 @@ function createWindow() {
     }
   });
 
-  win.loadFile('index.html'); // load the app UI
+  win.loadURL("http://localhost:5173");// load the app UI
 }
 
 app.whenReady().then(createWindow); // create window when Electron is ready
